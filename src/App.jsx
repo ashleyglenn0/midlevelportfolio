@@ -95,84 +95,90 @@ export default function Portfolio() {
 
         {/* Projects Section */}
         <Box id="projects" className="fade-in-section" sx={{ py: 8, backgroundColor: "#e2e8f0" }}>
-          <Container maxWidth="lg">
-            <Typography variant="h4" gutterBottom>Projects</Typography>
-            <Box
-              sx={{
-                display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "space-between",
-                gap: 3,
-              }}
-            >
-              {[{
-                title: "DashPass App",
-                desc: "Reservation system with dynamic role-based access and simulated payment workflows.",
-                image: "./assets/dashpass-preview.png",
-                link: "#",
-                note: "(Coming Soon)"
-              }, {
-                title: "Volunteer Check-In",
-                desc: "Real-time volunteer tracking system used at Render and GovTechCon with QR codes and shift logging.",
-                image: "./assets/checkin-preview.png",
-                link: "#"
-              }, {
-                title: "ToDo CI/CD App",
-                desc: "Simple full-stack task tracker with GitHub Actions CI/CD deployed to AWS S3.",
-                image: "./assets/todo-preview.png",
-                link: "#"
-              },
-              {
-                title: "Budget App",
-                desc: "Budget App that allows for tracking budgets and credit repair letters. Allows the user to join challenges for saving.",
-                image: "./assets/budget-preview.png",
-                link: "#" 
-              }
-            ].map((proj, i) => (
-                <Box
-                  key={i}
-                  sx={{
-                    flex: { xs: "100%", sm: "48%", md: "32%" },
-                    display: "flex",
-                    flexDirection: "column",
-                    mb: 3,
-                  }}
-                >
-                  <Card
-                    className="hover-card"
-                    sx={{
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="160"
-                      image={proj.image}
-                      alt={proj.title}
-                    />
-                    <CardContent sx={{ flexGrow: 1 }}>
-                      <Typography variant="h6">{proj.title}</Typography>
-                      <Typography variant="body2">{proj.desc}</Typography>
-                    </CardContent>
-                    <Box sx={{ p: 2 }}>
-                      <Button
-                        href={proj.link}
-                        target="_blank"
-                        fullWidth
-                        variant="contained"
-                      >
-                        View App {proj.note || ""}
-                      </Button>
-                    </Box>
-                  </Card>
-                </Box>
-              ))}
+  <Container maxWidth="lg">
+    <Typography variant="h4" gutterBottom>Projects</Typography>
+    <Box
+      sx={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "space-between",
+        gap: 3,
+      }}
+    >
+      {[{
+        title: "DashPass App",
+        desc: "Reservation system with dynamic role-based access and simulated payment workflows.",
+        tech: "Java, Spring Boot, Thymeleaf, MySQL",
+        image: "./assets/dashpass-preview.png",
+        link: "#",
+        note: "(Coming Soon)"
+      }, {
+        title: "Volunteer Check-In",
+        desc: "Real-time volunteer tracking system used at Render and GovTechCon with QR codes and shift logging.",
+        tech: "React, Firebase, Firestore, CSS",
+        image: "./assets/checkin-preview.png",
+        link: "#",
+        note: "(Coming Soon)"
+      }, {
+        title: "ToDo CI/CD App",
+        desc: "Simple full-stack task tracker with GitHub Actions CI/CD deployed to AWS S3.",
+        tech: "React, Node.js, GitHub Actions, AWS",
+        image: "./assets/todo-preview.png",
+        link: "#",
+        note: "(Coming Soon)"
+      }, {
+        title: "Budget App",
+        desc: "Budget tracker and credit repair letter manager with savings challenge support.",
+        tech: "React, Spring Boot, MySQL",
+        image: "./assets/budget-preview.png",
+        link: "#",
+        note: "(Coming Soon)"
+      }].map((proj, i) => (
+        <Box
+          key={i}
+          sx={{
+            flex: { xs: "100%", sm: "48%", md: "32%" },
+            display: "flex",
+            flexDirection: "column",
+            mb: 3,
+          }}
+        >
+          <Card
+            className="hover-card"
+            sx={{
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
+            <CardMedia
+              component="img"
+              height="160"
+              image={proj.image}
+              alt={proj.title}
+            />
+            <CardContent sx={{ flexGrow: 1 }}>
+              <Typography variant="h6">{proj.title}</Typography>
+              <Typography variant="body2" sx={{ fontWeight: 600, mt: 1 }}>{proj.tech}</Typography>
+              <Typography variant="body2" sx={{ mt: 1 }}>{proj.desc}</Typography>
+            </CardContent>
+            <Box sx={{ p: 2 }}>
+              <Button
+                href={proj.link}
+                target="_blank"
+                fullWidth
+                variant="contained"
+              >
+                View App {proj.note || ""}
+              </Button>
             </Box>
-          </Container>
+          </Card>
         </Box>
+      ))}
+    </Box>
+  </Container>
+</Box>
 
         {/* Leadership, Skills, Resume, Contact Sections Side-by-Side */}
         <Container sx={{ py: 4 }}>
@@ -192,8 +198,8 @@ export default function Portfolio() {
             <Box sx={{ flex: { xs: '100%', md: '48%' } }} id="resume" className="fade-in-section">
               <Typography variant="h4" gutterBottom>Resumes</Typography>
               <ul>
-                <li><a href="/resumes/software-engineer.pdf" target="_blank">Software Engineering Resume</a></li>
-                <li><a href="/resumes/cloud-engineer.pdf" target="_blank">Cloud-Focused Resume</a></li>
+                <li><a href="./resumes/AshleyGlennResumeUpdate2025SoftwareEngineer.pdf" target="_blank">Software Engineering Resume</a></li>
+                <li><a href="./resumes/AshleyGlennCloudResume2025.pdf" target="_blank">Cloud-Focused Resume</a></li>
               </ul>
             </Box>
             <Box sx={{ flex: { xs: '100%', md: '48%' } }} id="contact" className="fade-in-section">
