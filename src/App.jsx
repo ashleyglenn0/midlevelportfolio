@@ -205,13 +205,13 @@ export default function Portfolio() {
             <Box sx={{ flex: { xs: '100%', md: '48%' } }} id="contact" className="fade-in-section">
               <Typography variant="h4" gutterBottom>Contact</Typography>
               <Stack spacing={2}>
-                <MuiLink href="mailto:arglenn023@gmail.com" underline="none" color="inherit" display="flex" alignItems="center">
+                <MuiLink href="mailto:arglenn023@gmail.com" underline="none" color="inherit" display="flex" alignItems="center" sx={{ fontFamily: 'Inter, sans-serif' }}>
                   <EmailIcon sx={{ mr: 1 }} /> arglenn023@gmail.com
                 </MuiLink>
-                <MuiLink href="https://github.com/ashleyglenn0" target="_blank" underline="none" color="inherit" display="flex" alignItems="center">
+                <MuiLink href="https://github.com/ashleyglenn0" target="_blank" underline="none" color="inherit" display="flex" alignItems="center" sx={{ fontFamily: 'Inter, sans-serif' }}>
                   <GitHubIcon sx={{ mr: 1 }} /> github.com/ashleyglenn0
                 </MuiLink>
-                <MuiLink href="https://www.linkedin.com/in/ashley-glenn-b0a4941b0" target="_blank" underline="none" color="inherit" display="flex" alignItems="center">
+                <MuiLink href="https://www.linkedin.com/in/ashley-glenn-b0a4941b0" target="_blank" underline="none" color="inherit" display="flex" alignItems="center" sx={{ fontFamily: 'Inter, sans-serif' }}>
                   <LinkedInIcon sx={{ mr: 1 }} /> linkedin.com/in/ashley-glenn-b0a4941b0
                 </MuiLink>
               </Stack>

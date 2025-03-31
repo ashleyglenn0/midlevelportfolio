@@ -1,5 +1,18 @@
 /* App.css */
+a {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+ul a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  color: inherit;
+}
 
+ul a:hover {
+  text-decoration: underline; /* optional, for hover effect */
+}
 .fade-in-text {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
