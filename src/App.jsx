@@ -89,7 +89,7 @@ export default function Portfolio() {
         <Container id="about" className="fade-in-section" sx={{ py: 8 }}>
           <Typography variant="h4" gutterBottom>About Me</Typography>
           <Typography variant="body1">
-            I'm a passionate software engineer with a strong foundation in full-stack development and a deep love for building community. I’ve grown from an apprentice to Software Engineer III, led teams, mentored peers, and helped organize large tech conferences.
+            I'm a passionate software engineer with a strong foundation in full-stack development and a deep love for building community. I’ve grown from an apprentice to Software Engineer III, led teams, mentored peers, and helped organize volunteers at large tech conferences.
           </Typography>
         </Container>
 
@@ -114,7 +114,7 @@ export default function Portfolio() {
         note: "(Coming Soon)"
       }, {
         title: "Volunteer Check-In",
-        desc: "Real-time volunteer tracking system used at Render and GovTechCon with QR codes and shift logging.",
+        desc: "Real-time volunteer tracking system built to be used at multiple tech conferences with QR codes and shift logging.",
         tech: "React, Firebase, Firestore, CSS",
         image: "./assets/checkin-preview.png",
         link: "#",
@@ -186,7 +186,7 @@ export default function Portfolio() {
             <Box sx={{ flex: { xs: '100%', md: '48%' } }} id="leadership" className="fade-in-section">
               <Typography variant="h4" gutterBottom>Leadership & Community</Typography>
               <Typography>
-                Volunteer Manager for GovTechCon (600+ attendees) and Co-Manager for Render volunteers. Mentor with LaunchCode. Render Ambassador helping grow tech communities.
+                Volunteer Manager for GovTechCon (600+ attendees) and RenderATL Volunteer Co-Manager (5000+ attendees). Mentor with LaunchCode. RenderATL Ambassador helping grow tech communities.
               </Typography>
             </Box>
             <Box sx={{ flex: { xs: '100%', md: '48%' } }} id="skills" className="fade-in-section">
